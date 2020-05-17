@@ -1,0 +1,204 @@
+.section_container {
+    padding-top: 8vh;
+    text-align: center;
+}
+.section_content {
+    width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.section_content img {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    z-index: 1;
+}
+
+.section_content .text {
+    width: 100%;
+    height: 52vh;
+    background: var(--dark);
+    padding: 8rem 0;
+    color: var(--white);
+    box-sizing: border-box;
+}
+
+.section_content .text h3 {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+    font-weight: bold;
+}
+
+.section_content .text p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+/* 메인_끝 */
+
+/* 음악 감상 */
+.music_container {
+    max-width: 118rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background: var(--bg);
+}
+
+.section_content .item h4 {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 3rem 0 3rem 0;
+    line-height: 2rem;
+}
+
+.section_content .item iframe{
+    max-width: 118rem;
+}
+
+.section_content > span {
+    display: inline-block;
+    width: 8rem;
+    height: 3rem;
+    border: 1px solid var(--dark);
+    border-radius: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+    
+.section_content > span:hover {
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: var(--white);
+}
+
+
+/* 가사창 */
+.section_content .lyrics {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.6s;
+}
+
+.section_content .lyrics.on {
+    left: 0vw;
+}
+
+.section_content .lyrics .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--accent);
+    z-index: 30;
+    opacity: 0.96;
+}
+
+.section_content .lyrics .icon {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    z-index: 30;
+    font-size: 4rem;
+    opacity: 0.8;
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section_content .lyrics .icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+.section_content .lyrics .lyrics_none {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 30;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    overflow-y: scroll;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.section_content .lyrics .lyrics_none span {
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.section_content .lyrics .lyrics_none .comment {
+    margin-top: 3rem;
+    color: var(--bg);
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    height: 40%;
+}
+
+@media (min-width:900px) {
+    .section_content .lyrics {
+        left: -60vw;
+        width: 60vw;
+    }
+    .section_content {
+        max-width: 118rem;
+        margin: 0 auto;
+    }
+        
+
+    .section_content img {
+        height: 50vh;
+    }
+
+    .section_content .text {
+        height: 42vh;
+    }
+    
+}
+
+@media (min-width:1100px) {
+    .media {
+        padding-top: 10rem;
+    }
+
+    .section_content .lyrics {
+        left: -30vw;
+        width: 30vw;
+    }
+    .section_content {
+        max-width: 118rem;
+        margin: 0 auto;
+    }
+
+    .section_content img {
+        width: 50%;
+        height: 50vh;
+        float: left;
+    }
+
+    .section_content .text {
+        width: 50%;
+        height: 50vh;
+        float: left;
+    }
+    
+}
