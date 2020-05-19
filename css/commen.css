@@ -332,6 +332,18 @@ header {
     transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
+.nav_snb li:nth-child(3):hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+
+.nav_snb li:nth-child(3):hover > ul li {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+}
+
 .nav_snb li:hover {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -371,7 +383,11 @@ header {
     opacity: 1;
 }
 
-.list_snb > span {
+.list_snb li:nth-child(3) {
+    height: 3.6rem;
+}
+
+.list_snb li:nth-child(3) > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -384,6 +400,7 @@ header {
     color: var(--white);
 }
 
+.list_snb li:nth-child(3):hover::after,
 .nav_snb .logoutLi:hover::after{
     width: 0%;
 }
