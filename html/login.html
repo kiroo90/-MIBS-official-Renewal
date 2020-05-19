@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../src/slick.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/section.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>MIBSound</title>
+</head>
+<body>
+    <div class="wrap_event">
+        <!-- 헤더 -->
+        <header class="header_container section_header">
+            <nav class="nav_gnb">
+                <h1><a href="../index.html">로고</a></h1>
+                <ul class="list_gnb">
+                    <li>
+                        <a href="../index.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="#">MixTape</a>
+                        <ul class="list_snb">
+                            <li><a href="#">vol.1 X</a></li>
+                            <li><a href="./section_01.html">vol.2</a></li>
+                            <li><a href="./section_02.html">vol.3</a></li>
+                            <li><a href="./section_03.html">vol.4</a></li>
+                            <li><a href="./section_04.html">vol.5</a></li>
+                            <li><a href="./section_05.html">vol.6</a></li>
+                            <li><a href="./section_06.html">Jay vol.1</a></li>
+                            <li><a href="./section_07.html">Jay vol.2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Video X</a>
+                    </li>
+                </ul>
+                <ul class="login">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                </ul>
+                <ul class="logout">
+                    <li>
+                        <span class="loginText"></span>
+                        <span><i class="fas fa-user-circle"></i></span>
+                    </li>
+                    <li><button class="logoutBtn" type="button">로그아웃</button></li>
+                </ul>
+                <div class="snb_nav_ber">
+                    <span class="clip">서브 메뉴 열기 아이콘</span>
+                    <i class="fas fa-bars"></i>
+                    <span class="clip">서브 메뉴 닫기 아이콘</span>
+                    <i class="fas fa-times none"></i>
+                </div>
+            </nav>
+            <nav class="nav_snb">
+                <div class="bg"></div>
+                <ul class="list_snb">
+                    <li class="on"><a href="login.html">Login</a></li>
+                    <li class="on"><a href="signup.html">Sign Up</a></li>
+                    <span>
+                        <li class="logoutLi none"><span class="loginText"></span></li>
+                        <li class="logoutLi none"><button class="logoutBtn" type="button">로그아웃</button></li>
+                    </span>
+                    <li><a href="#">MIXTAPE Vol.1 X</a></li>
+                    <li><a href="./section_01.html">MIXTAPE Vol.2</a></li>
+                    <li><a href="./section_02.html">MIXTAPE Vol.3</a></li>
+                    <li><a href="./section_03.html">MIXTAPE Vol.4</a></li>
+                    <li><a href="./section_04.html">MIXTAPE Vol.5</a></li>
+                    <li><a href="./section_05.html">MIXTAPE Vol.6</a></li>
+                    <li><a href="./section_06.html">Jay vol.1</a></li>
+                    <li><a href="./section_07.html">Jay vol.2</a></li>
+                </ul>
+            </nav>
+        </header>
+    <!-- 메인  -->
+
+    <section class="login_container">
+        <article class="content">
+            <img src="../img/logo_big.png" alt="로고">
+            <form action="">
+                <input id="loginId" type="text" placeholder="아이디">
+                <input id="loginPass" type="password" placeholder="비밀번호">
+                <div class="btn">
+                    <button type="button" id="login">로그인</button>
+                    <button type="button" id="signUpGo">회원가입</button>
+                </div>
+            </form>
+        </article>
+    </section>
+
+      <!-- 푸터 -->
+      <footer class="container footer_container">
+        <h2><a href="../index.html">로고</a></h2>
+        <div class="sns_icon__container">
+            <a href="https://music.naver.com/ML/MIBS" target="_blank"><img src="../img/naver-icon.png" alt="네이버"></a>
+            <a href="https://soundcloud.com/kiroo" target="_blank"><i class="fab fa-soundcloud"></i><span class="clip">사운드클라우드</span></a>
+            <a href="https://www.instagram.com/mibs_kiroo/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <span class="clip">인스타그램</span>
+            </a>
+        </div>
+        <p>Copyright ⓒ MIBSound. All rights reserved.</p>
+    </footer>
+</div>  
+<script
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+</script>
+<script src="../src/slick.js"></script>
+<script src="../js/click.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>
